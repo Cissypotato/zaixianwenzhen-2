@@ -1,0 +1,150 @@
+<!--pages/index/doctorDetail/doctorDetail.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="top">
+      <view class="avatar"></view>
+      <view class="info-1">
+        <view class="info-1-top">
+          <view>
+            <span class="name">陈土豆</span> 主任医师
+          </view>
+          <view class="unfollow" bindtap="handleFollow"wx:if="{{follow}}">取消关注</view>
+          <view class="follow" bindtap="handleFollow" wx:else>关注</view>
+          
+        </view>
+        <view>内科 | 四川省第二中医院殊德医馆</view>
+      </view>
+
+
+    </view>
+    <view class="middle">
+      <view class="m-item">
+        <view class="num">3208</view>
+        <view class="unit">问诊量</view>
+      </view>
+      <view class="m-item">
+        <view class="num">5</view>
+        <view class="unit">评分</view>
+      </view>
+      <view class="m-item">
+        <view class="num">3169</view>
+        <view class="unit">关注量</view>
+      </view>
+
+    </view>
+    <view class="bottom">
+      <view class="b-item">
+        <i class="iconfont icon-gou"></i>100%医生本人</view>
+      <view class="b-item">
+        <i class="iconfont icon-gou"></i>1小时内平均回复</view>
+      <view class="b-item">
+        <i class="iconfont icon-gou"></i>未回复退款</view>
+    </view>
+  </view>
+
+  <view class="icons">
+    <view class="i-item">
+      <view class="icon">
+        <!-- <i class="iconfont icon-zaixianjiaoliu-"></i> -->
+        <image src="/images/zaixian.png" mode="widthFix"></image>
+      </view>
+      <view>不限次数</view>
+      <view>在线交流</view>
+    </view>
+    <view class="i-item">
+      <view class="icon">
+       <image src="/images/fuzhen.png" mode="widthFix"></image>
+        <!-- <i class="iconfont icon-fuzhenkaidan--"></i> -->
+      </view>
+      <view>复诊患者</view>
+      <view>为您开方</view>
+    </view>
+    <view class="i-item">
+      <view class="icon">
+       <image src="/images/yaochai.png" mode="widthFix"></image>
+        <!-- <i class="iconfont icon-kuaididaojia--"></i> -->
+      </view>
+      <view>药材道地</view>
+      <view>快递到家</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="main">
+    <!-- <view class="tutorial">
+      <view class="left">
+        <view>图文问诊</view>
+        <view>
+          <i class="iconfont icon-xiaoxi"></i>
+        </view>
+        <view>￥17.00元/次</view>
+        <view class="free">169用户：0元问诊</view>
+      </view>
+      <view class="right">
+        <view class="r-item r-item-1">
+          <i class="iconfont icon-diannao"></i>点击查看图文问诊视频教程
+          <span>></span>
+        </view>
+        <view class="r-item">
+          <i class="iconfont icon-shu_1"></i>点击查看图文问诊教程
+          <span>></span>
+        </view>
+      </view>
+    </view> -->
+
+    <view class="tutorial-1">
+      <view class="black">使用文字、图片与医生线上沟通</view>
+      <view>
+        <span>·</span>医生接诊后24小时内可不限次数交流</view>
+      <view>
+        <span>·</span>医生48小时未接诊，自动退款</view>
+    </view>
+
+    <view class="section">
+      <view class="title">医生擅长</view>
+      <view class="content">针灸综合治疗带状疱疹及后遗神经痛、扁平疣、结节囊肿型痤疮、荨麻疹、湿疹、银屑病、各类皮炎</view>
+
+    </view>
+
+    <view class="section">
+      <view class="title">医生简介</view>
+      <view class="part">
+        <view class="part-t">一、荣誉：</view>
+        <view class="content-item">1.副主任医师</view>
+        <view class="content-item">2.青年岗位能手</view>
+        <view class="content-item">3.四川省中医外科、皮肤分会专委会委员</view>
+      </view>
+
+      <!-- <view class="part">
+        <view class="part-t">二、学术成果：</view>
+        <view class="content-item">1.发表各类论文8篇</view>
+        <view class="content-item">2.编著专著1部</view>
+        <view class="content-item">3.参加了2项国家级和10项省级科研课题，获省政府科技进步三等奖1项</view>
+      </view> -->
+      <view class="part">
+        <view class="part-t">三、从医经历：</view>
+        <view class="content-item">毕业于成都中医药大学，从事临床工作15余年，在国家名老中医张毅学术传承工作室学以及四川省第五批中药师承教育学习</view>
+      </view>
+      <view class="part">
+        <view class="part-t">四、主治病症：</view>
+        <view class="content-item">状疱疹及后遗神经痛、扁平疣、结节囊肿型痤疮、荨麻疹、湿疹、银屑病、各类皮炎，疗技术治疗各种皮肤科顽症</view>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class="btn-wrapper">
+    <view class="btn" bindtap="inquiry">图文问诊 ￥17.00元/次</view>
+  </view>
+</view>
+
+<view class="cover" bindtap="closeCover" wx:if="{{coverShow}}">
+<view catchtap='incover'class='{{aniStyle?"slideup":"slidedown"}}'>
+ <view wx:if="{{patientList.length>0}}" class="patient-wrapper">
+   <view class="title">选择就诊人</view>
+   <view bindtap="toOrder" data-id="1">罗勤耕</view>
+   <view bindtap="toOrder" data-id="2">傅红雪</view>
+ </view>
+ <view bindtap="toAddCard" class="add-card"> <i class="iconfont icon-jia"></i>添加就诊人</view>
+</view>
+</view>

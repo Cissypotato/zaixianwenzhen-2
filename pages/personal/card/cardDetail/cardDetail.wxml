@@ -1,0 +1,8 @@
+<!--pages/personal/card/cardDetail/cardDetail.wxml-->
+<view class="container">
+
+<view class="item"><span>姓名</span>陈土豆</view>
+<view class="item"><span>手机号</span>12345678901</view>
+<view class="item"><span>身份证号码</span>510187199009127890</view>
+
+</view>

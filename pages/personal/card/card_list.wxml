@@ -1,0 +1,31 @@
+<!--pages/personal/card/card_list.wxml-->
+
+
+<!-- <no-item wx:if="{{list.length==0}}"></no-item> -->
+
+<view class="container" wx:if='{{userId}}'>
+  <view class="header">
+    <span>您还可以新建4张会员卡</span>
+    <span class="bindCard" bindtap="bindCard">办卡/绑卡</span>
+  </view>
+
+  <view class="list-wrapper">
+    <view class="card">
+      <view class="item">
+        <view>陈土豆
+          <!-- <span class="crown"><i class="iconfont icon-huangguanguanjun"></i></span> -->
+          <span class="vip">普通会员</span>
+        </view >
+        <view class="cancelBind" bindtap="cancelBind">解除绑定</view>
+      </view>
+      <view class="item">
+        <view>手机号：13787890678</view>
+        <view bindtap="toCardDetail" data-id="1">详情></view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
+
+<not-login wx:else></not-login>

@@ -1,0 +1,8 @@
+<!--pages/personal/medicine/medicine.wxml-->
+<view wx:if="{{userId}}">
+  <no-item wx:if="{{list.length==0}}"></no-item>
+  <view class="main" wx:else></view>
+</view>
+
+
+<not-login wx:else></not-login>

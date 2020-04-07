@@ -1,0 +1,156 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.1",
+	"appid": "wxf687c16b2f5c0bd9",
+	"projectname": "wenzhen",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/personal/personal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的问诊",
+					"pathName": "pages/personal/inquiry/inquiry",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关注的医生",
+					"pathName": "pages/personal/doctor/doctor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索页面",
+					"pathName": "pages/index/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "医生详情页",
+					"pathName": "pages/index/doctorDetail/doctorDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "医生列表页",
+					"pathName": "pages/index/doctorList/doctorList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "所有科室",
+					"pathName": "pages/index/allSort/allSort",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "问诊人信息",
+					"pathName": "pages/personal/card/card_list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加就诊人信息",
+					"pathName": "pages/personal/card/addCard/addCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "就诊人信息详情",
+					"pathName": "pages/personal/card/cardDetail/cardDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/personal/suggest/suggest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登陆页面",
+					"pathName": "pages/personal/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单页面",
+					"pathName": "pages/index/doctorDetail/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的问诊",
+					"pathName": "pages/personal/inquiry/inquiry",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "即时通讯",
+					"pathName": "pages/personal/inquiry/chat/chat",
+					"scene": null
+				}
+			]
+		}
+	}
+}

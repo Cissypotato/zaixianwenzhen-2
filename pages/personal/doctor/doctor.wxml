@@ -1,0 +1,64 @@
+<!--pages/personal/doctor/doctor.wxml-->
+
+
+<view wx:if="{{userId}}">
+  <no-item wx:if="{{list.length==0}}"></no-item>
+
+  <view class="container" wx:else>
+
+    <view class="main" wx:if="{{list.length>0}}">
+
+      <view class="list-item">
+        <view class="avatar" bindtap="toDoctorDetail" data-id="1">
+          <view class="avatar-img"></view>
+        </view>
+        <view class="info">
+          <view class="line-1">
+            <span class="name">陈春涛</span>
+            <span class="title">副主任医师</span>
+            <span class="unfollow" bindtap="unfollow" data-id="1">取消关注</span>
+          </view>
+          <view class="address" bindtap="toDoctorDetail" data-id="1">皮肤科 | 四川省第二中医院苏德医馆</view>
+          <view class="skill" bindtap="toDoctorDetail" data-id="1">针灸综合治疗各种疱疹针灸综合治疗各种疱疹针灸综合治疗各种疱疹</view>
+          <view bindtap="toDoctorDetail" data-id="1">
+            <i class="iconfont icon-xingxing"></i>
+            <span class="score">5分</span>
+            <i class="iconfont icon-xinxi"></i>
+            <span class="answer">194个回答</span>
+          </view>
+          <view class="bottom">图文
+            <span class="price">￥197</span>
+            <span class="num">169人 0元</span>
+          </view>
+        </view>
+      </view>
+      <view class="list-item">
+        <view class="avatar" bindtap="toDoctorDetail" data-id="1">
+          <view class="avatar-img"></view>
+        </view>
+        <view class="info">
+          <view class="line-1">
+            <span class="name">陈春涛</span>
+            <span class="title">副主任医师</span>
+            <span class="unfollow" bindtap="unfollow" data-id="1">取消关注</span>
+          </view>
+          <view class="address" bindtap="toDoctorDetail" data-id="1">皮肤科 | 四川省第二中医院苏德医馆</view>
+          <view class="skill" bindtap="toDoctorDetail" data-id="1">针灸综合治疗各种疱疹针灸综合治疗各种疱疹针灸综合治疗各种疱疹</view>
+          <view bindtap="toDoctorDetail" data-id="1">
+            <i class="iconfont icon-xingxing"></i>
+            <span class="score">5分</span>
+            <i class="iconfont icon-xinxi"></i>
+            <span class="answer">194个回答</span>
+          </view>
+          <view class="bottom">图文
+            <span class="price">￥197</span>
+            <span class="num">169人 0元</span>
+          </view>
+        </view>
+      </view>
+    
+    </view>
+  </view>
+
+</view>
+<not-login wx:else></not-login>

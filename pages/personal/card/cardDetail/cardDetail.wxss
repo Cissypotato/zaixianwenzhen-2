@@ -1,0 +1,4 @@
+/* pages/personal/card/cardDetail/cardDetail.wxss */
+
+.container{padding: 3vw}
+.item{width: 100%;display: flex;justify-content: space-between;line-height: 3.2em;border-bottom: 1px solid #eee}

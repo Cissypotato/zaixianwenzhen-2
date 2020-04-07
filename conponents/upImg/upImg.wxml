@@ -1,0 +1,17 @@
+<!--components/upImg/upImg.wxml-->
+<view class="up-img-wrapper">
+
+    <!-- <view class="add-img-word">
+        <b>添加图片 (大小在2m内)</b>
+    </view> -->
+    <view class='i-wrapper'>
+        <view class='img-wrapper' wx:for="{{img_path}}" wx:key wx:if="{{index<count}}">
+            <image src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+            <view class='del' data-idx="{{index}}" bindtap="removeImage">删除图片</view>
+        </view>
+        <view class='img-wrapper add-img-wrapper' bindtap="chooseImage" wx:if="{{img_path.length<count}}">
+            <view class='btn'>添加图片</view>
+        </view>
+    </view>
+
+</view>

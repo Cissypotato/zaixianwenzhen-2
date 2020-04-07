@@ -1,0 +1,12 @@
+/* pages/index/search/search.wxss */
+
+/*搜索框*/
+.search-wrapper{display: flex;justify-content: space-between;align-items: center;padding: 3vw;}
+.search{background: #eee;padding:0 20rpx;display: flex;height: 60rpx;border-radius: 10rpx;width: 70%}
+.search>input{width: 90%;height: 60rpx;}
+.icon-search{color: #bbb;line-height: 60rpx;margin-right: 6rpx;}
+.placeholder{font-size: 26rpx;color: #bbb}
+.confirm{flex: 1;text-align: center}
+
+
+.main{padding: 3vw;}

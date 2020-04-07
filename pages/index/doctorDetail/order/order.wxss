@@ -1,0 +1,37 @@
+/* pages/index/doctorDetail/order/order.wxss */
+/*header*/
+.header{padding: 3vw}
+.card{padding: 3vw;width: 100%;display: flex;}
+.avatar{width: 19vw;height: 19vw;background: #eee}
+.info{flex: 1;padding-left: 3vw;font-size: 26rpx;line-height: 1.8em;display: flex;flex-direction: column;justify-content: space-between}
+.info>view>.name{font-size: 32rpx;font-weight:800}
+.info>.price{font-size: 34rpx;color: orangered;line-height: 1.2em}
+
+.tip{margin: 3vw;background: rgb(243, 253, 247);border-radius: 20rpx;line-height: 3em;font-size: 24rpx;padding-left: 20rpx;}
+
+
+/*病情描述部分*/
+.description{padding: 3vw;margin-bottom: 100rpx;}
+.title{line-height: 2em;font-size: 36rpx;font-weight: 600}
+textarea{border: 1px solid #eee;width: 100%;padding: 10rpx;box-sizing: border-box;}
+.placeholder{font-size: 28rpx;}
+
+.tips{font-size: 24rpx;padding-left: 20rpx;line-height: 3em;}
+.tips>span,.icon-gou{color: orangered;margin-right: 8rpx;}
+
+/* 图片上传 */
+.up-img-wrapper{margin-top: 40rpx;}
+.add-img-word{font-size: 28rpx;color: #555;line-height: 2em}
+.i-wrapper{width: 100%;display: flex;flex-wrap: wrap;}
+.i-wrapper>.img-wrapper{width:30%;margin-right:5%;margin-top: 20rpx;}
+.img-wrapper:nth-child(3n+0){margin-right:0;} 
+.img-wrapper image {width:100%; height:30vw; display:block; border-radius:0.2rem;}
+.del {font-size:0.8rem; color:#888; text-align:center; margin-top:0.4rem; border:1px solid #ddd; border-radius:0.2rem; padding:0.2rem 0px; }
+.btn {background:#eee; border:1px solid #ddd; color:#888; width:100%; height:30vw; line-height:30vw; text-align:center; font-size:0.8rem; border-radius:0.2rem;}
+
+/*footer*/
+.footer{width: 100%;display: flex;position: fixed;bottom: 0;z-index: 2;background: #eee;}
+.footer>.price,.footer>.submit{width: 50%;box-sizing: border-box;line-height: 3em;text-align: center;}
+.footer>.price>span{color: orangered}
+
+.footer>.submit{background: orangered;color: #fff}

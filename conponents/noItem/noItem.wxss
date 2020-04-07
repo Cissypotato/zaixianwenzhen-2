@@ -1,0 +1,7 @@
+/* conponents/noItem/noItem.wxss */
+
+.container{height: 100vh;display: flex;flex-direction: column;width: 100%;align-items: center}
+
+.icon-wrapper{width: 40vw;background: #eee;margin-top: 20vh}
+.icon-wrapper>image{width: 100%}
+.word{color: #555;margin-top: 20rpx;}

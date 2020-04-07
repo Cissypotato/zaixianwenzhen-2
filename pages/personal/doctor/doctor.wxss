@@ -1,0 +1,7 @@
+/* pages/personal/doctor/doctor.wxss */
+
+.main{padding: 3vw;}
+
+.line-1{position: relative;}
+.unfollow{display: inline-block;border: 1px solid #bbb;color: #bbb;padding: 0 20rpx;border-radius: 20rpx;
+font-size: 24rpx;margin-left: 70rpx;position: absolute;right: 0;z-index: 999}

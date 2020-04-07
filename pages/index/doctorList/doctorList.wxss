@@ -1,0 +1,12 @@
+/* pages/index/doctorList/doctorList.wxss */
+/*搜索框*/
+.search{background: #eee;margin: 3vw 3vw;padding:0 20rpx;display: flex;height: 60rpx;border-radius: 10rpx;}
+.search>input{width: 90%;height: 60rpx;}
+.icon-search{color: #bbb;line-height: 60rpx;margin-right: 6rpx;}
+.placeholder{font-size: 26rpx;color: #bbb}
+
+
+.picker-wrapper{display: flex;width: 100%;border-bottom: 1px solid #eee;padding: 30rpx 0;}
+.section{width: 50%;text-align: center}
+
+.list-wrapper{padding: 3vw;}

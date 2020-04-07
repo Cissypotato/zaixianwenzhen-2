@@ -1,0 +1,86 @@
+/* pages/index/doctorDetail/doctorDetail.wxss */
+/*头部*/
+.header{background: #c89f63;padding:4vw 3vw;color: #fff}
+.top{width: 100%;display: flex;}
+.top>.avatar{width: 18vw;height: 18vw;background: #fff;border-radius: 50%}
+.top>.info-1{flex: 1;font-size: 28rpx;display: flex;flex-direction: column;justify-content: center;padding-left: 30rpx;line-height: 1.7em;}
+.info-1-top{display: flex;justify-content: space-between}
+.info-1-top>view>.name{font-size: 36rpx;margin-right: 20rpx;}
+.follow{background: #fff;width: 15vw;line-height: 1.6em;border-radius: 16rpx;text-align: center;color:  #c89f63;height: 1.6em;font-size: 24rpx;}
+.unfollow{background: #fff;width: 17vw;line-height: 1.6em;border-radius: 16rpx;text-align: center;color:  #c89f63;height: 1.6em;font-size: 24rpx;}
+
+.middle,.bottom,.icons{display: flex;width: 100%}
+.m-item{width: 33.33%;padding: 30rpx 0;text-align: center;font-size: 28rpx}
+.m-item>.num{font-size: 34rpx;font-weight: 600;line-height: 1.4em}
+
+.b-item{width: 33.33%;text-align: center;font-size: 24rpx;}
+.icon-gou{font-size: 26rpx;margin-right: 4rpx;}
+
+.i-item{width: 33.33%;text-align: center;padding: 30rpx 0;font-size: 28rpx;}
+.i-item>.icon{display: flex;width: 100%;justify-content: center;align-items: center;}
+.i-item>.icon>image{width: 40%;}
+/* .icon-zaixianjiaoliu-,.icon-fuzhenkaidan--,.icon-kuaididaojia--{font-size: 100rpx;color: #c89f63} */
+
+/*灰色背景分隔线*/
+.line{height: 30rpx;background: #eee}
+
+.main{padding: 3vw;padding-bottom: 100rpx;}
+.tutorial{display: flex;width: 100%}
+.tutorial>.left{width: 35%;text-align: center;font-size: 26rpx;padding-top: 20rpx;background: #eee;border-radius: 20rpx;line-height: 1.6em}
+.icon-xiaoxi{color: #c89f63}
+.free{color: #fff;font-size: 24rpx;background: #c89f63;border-bottom-left-radius: 20rpx;border-bottom-right-radius: 20rpx;}
+
+.tutorial>.right{width: 65%;font-size: 26rpx;padding-left: 30rpx;}
+.r-item-1{border-bottom: 1px solid #eee}
+.r-item{line-height: 2em;margin-top: 20rpx;}
+.icon-diannao,.icon-shu_1{font-size: 50rpx;margin-right: 20rpx;}
+.r-item>span{color: #bbb}
+
+.tutorial-1{padding: 3vw;background: #faf5ed;border: 1px solid #ccb188;line-height: 1.6em;margin-top: 20rpx;}
+.tutorial-1>.black{font-size: 30rpx;font-weight: 600}
+.tutorial-1>view{font-size: 26rpx;}
+.tutorial-1>view>span{font-weight: 800;margin-right: 6rpx;font-size: 36rpx;color: #c89f63}
+
+.section{margin-top: 30rpx;}
+.section>.title{font-size: 36rpx;font-weight: 600;line-height: 2em}
+.section>.content,.content-item{font-size:28rpx;color: #555;line-height: 1.8em }
+
+.part-t{font-weight: 600;line-height: 2.2em;color: #c89f63}
+
+.btn-wrapper{position: fixed;bottom: 0;left: 0;width: 100vw;background: #fff;padding-bottom: 10rpx;}
+.btn{background: #c89f63;color: #fff;width: 90%;line-height: 2.2em;border-radius: 20rpx;text-align: center;
+margin: 0 auto;}
+
+
+/*cover*/
+.cover{height: 100vh;position: fixed;background: rgba(0, 0, 0, 0.2);top: 0;left: 0;display: flex;flex-direction: column;justify-content: flex-end;width: 100%}
+.patient-wrapper{background: #fff;line-height: 2.2em}
+.patient-wrapper>view{border-bottom: 1px solid #eee;padding-left: 3vw;}
+.patient-wrapper>view.title{font-weight: 600;font-size: 36rpx;}
+.add-card{background: #fff;line-height: 3em;color: #c89f63;font-size: 28rpx;text-align: center}
+
+.icon-jia{color: #c89f63;margin-right: 8rpx;}
+
+/*动画*/
+@keyframes slidedown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+.slidedown {
+    animation: slidedown 0.5s linear ;
+}
+.slideup {
+    animation: slideup 0.5s linear ;
+}
+@keyframes slideup {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

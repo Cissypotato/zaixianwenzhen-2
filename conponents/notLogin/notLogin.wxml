@@ -1,0 +1,8 @@
+<!--conponents/notLogin/notLogin.wxml-->
+
+<view class="tologin-wrapper">
+
+  <view bindtap="toLogin">您还没有登陆，请登陆后查看数据</view>
+
+</view>
+

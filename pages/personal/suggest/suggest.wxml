@@ -1,0 +1,11 @@
+<!--pages/personal/suggest/suggest.wxml-->
+<view class="container">
+
+ 
+  <textarea placeholder="请输入意见反馈" placeholder-class="placeholder"bindblur="bindTextAreaBlur" ></textarea>
+  <input placeholder="手机/QQ/邮箱  选填" placeholder-class="placeholder" bindblur="getInputValue"></input>
+  <view class="submit">提交</view>
+ 
+
+
+</view>

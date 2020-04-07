@@ -1,0 +1,114 @@
+<!--pages/index/allSort/allSort.wxml-->
+<view class="container">
+  <view class="title">所有科室</view>
+  <view class="main">
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/fuke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">妇科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/erke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">儿科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/pifuke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">皮肤科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/guke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">杜氏骨伤</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/neike (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">内科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/changwei (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">胃肠科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/zhenjiu (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">针灸科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/ruxian (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">乳腺科</view>
+    </view>
+    <!-- <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/fuke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">妇科</view>
+    </view> -->
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/erbihou (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">耳鼻喉</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/yanke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">眼科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/shenjing (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">神经内科</view>
+    </view>
+    <!-- <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/fuke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">妇科</view>
+    </view> -->
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/buyunbuyu (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">不孕不育</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/zhongliu (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">肿瘤科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/nanke (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">男科</view>
+    </view>
+    <view class="item" bindtap="toDoctorList" data-id="1">
+      <view class="img-wrapper">
+        <image src="/images/miniao (2).png" mode="widthFix"></image>
+      </view>
+      <view class="name">泌尿科</view>
+    </view>
+    
+
+
+
+  </view>
+
+
+</view>

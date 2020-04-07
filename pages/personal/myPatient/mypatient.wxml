@@ -1,0 +1,28 @@
+<!--pages/personal/myPatient/mypatient.wxml-->
+<view class="container">
+	<view class="tab">
+
+		<view class="tab-item"><span>未回复</span></view>
+		<view class="tab-item"><span>已完成</span></view>
+	</view>
+	<view class="main">
+		<view class="card" bindtap="toChat" data-id="1">
+			<view class="avatar">
+				<image mode="widthFix"></image>
+			</view>
+			<view class="info">
+				<view>
+                 <span class="name">傅红雪</span>
+				<span class="age">18岁</span>  
+                </view>
+                <view class="tel">电话：13887890678</view>
+
+			</view>
+		</view>
+	</view>
+
+
+
+
+
+</view>

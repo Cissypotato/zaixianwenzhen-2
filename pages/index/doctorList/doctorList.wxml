@@ -1,0 +1,52 @@
+<!--pages/index/doctorList/doctorList.wxml-->
+<view class="container">
+  <view class="search">
+    <i class="iconfont icon-search"></i>
+    <input placeholder="搜索医生、科室、病症" placeholder-class="placeholder" bindfocus="tosearch"></input>
+  </view>
+  <view class="picker-wrapper">
+    <view class="section">
+      <picker bindchange="bindPickerChange0" value="{{index0}}" range="{{array0}}" range-key="name">
+        <view class="picker">
+          {{array0[index0].name}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}" range-key="name">
+        <view class="picker">
+          {{array1[index1].name}}
+        </view>
+      </picker>
+    </view>
+
+  </view>
+  
+  <no-item wx:if="{{list.length==0}}"></no-item>
+  <view class="list-wrapper" wx:else>
+    <view class="list-item" bindtap="toDoctorDetail" data-id="1">
+        <view class="avatar">
+          <view class="avatar-img"></view>
+        </view>
+        <view class="info">
+          <view>
+            <span class="name">陈春涛</span>
+            <span class="title">副主任医师 | 皮肤科</span>
+          </view>
+          <view class="address">四川省第二中医院苏德医馆</view>
+          <view class="skill">针灸综合治疗各种疱疹针灸综合治疗各种疱疹针灸综合治疗各种疱疹</view>
+          <view>
+            <i class="iconfont icon-xingxing"></i>
+            <span class="score">5分</span>
+            <i class="iconfont icon-xinxi"></i>
+            <span class="answer">194个回答</span>
+          </view>
+          <view class="bottom">图文
+            <span class="price">￥197</span>
+            <span class="num">169人 0元</span>
+          </view>
+        </view>
+      </view>
+  
+  </view>
+</view>

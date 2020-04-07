@@ -1,0 +1,3 @@
+/* conponents/notLogin/notLogin.wxss */
+.tologin-wrapper{height: 100vh;display: flex;justify-content: center;padding-top: 36vh;box-sizing: border-box;}
+.tologin-wrapper>view{border-bottom: 1px solid #eee;line-height: 2em;color: #555;font-size: 28rpx;height: 2em;padding: 0 6rpx;}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "not-login": "/conponents/notLogin/notLogin"
+  }
+}

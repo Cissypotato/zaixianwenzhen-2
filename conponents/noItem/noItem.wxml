@@ -1,0 +1,8 @@
+<!--conponents/noItem/noItem.wxml-->
+<view class="container">
+
+  <view class="icon-wrapper">
+    <image src="/images/noItem2.png" mode="widthFix"></image>
+  </view>
+  <view class="word">暂时没有任何数据</view>
+</view>

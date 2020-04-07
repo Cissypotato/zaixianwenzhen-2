@@ -1,0 +1,48 @@
+<!--pages/index/doctorDetail/order/order.wxml-->
+<view class="container">
+
+
+  <view class="header">
+    <view class="card">
+      <view class="avatar"></view>
+      <view class="info">
+        <view>
+          <span class="name">陈土豆</span> 主任医师
+        </view>
+        <view>内科 | 四川省第二中医院殊德医馆</view>
+        <view class="price">￥15.00</view>
+      </view>
+    </view>
+    <view class="tip">回复时间：预计两小时回复，48小时内未回复自动退款</view>
+  </view>
+
+  <view class="description">
+    <view class="title">请输入病情</view>
+    <textarea placeholder="请输入病情" placeholder-class="placeholder"></textarea>
+
+    <view class="up-img-wrapper">
+
+      <!-- <view class="add-img-word">
+        <b>添加图片 (大小在2m内)</b>
+    </view> -->
+     <up-img bindmyevent="onMyEvent" count='{{countPic}}'></up-img>
+
+    </view>
+
+    <view class="sub-img"></view>
+    <view class="tips">
+      <i class="iconfont icon-gou"></i>已读并同意
+      <span>《用户协议》</span>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="price">合计：
+      <span>￥15.00</span>
+    </view>
+    <view class="submit" bindtap="submit">确认问诊信息</view>
+  </view>
+</view>
+
+
+<!-- <view class="">用户协议</view> -->

@@ -1,0 +1,13 @@
+/* pages/personal/myPatient/mypatient.wxss */
+
+
+.tab{width: 100%;display: flex;box-sizing: border-box;border-bottom: 1px solid #EEE;}
+.tab-item{width: 50%;text-align: center;line-height: 2em;color: #555;}
+.tab-item>span{border-bottom:2px solid orangered;}
+
+.main{padding: 4vw;}
+
+.card{width: 100%;display: flex;border-bottom: 1px solid orangered;padding: 3vw;box-sizing: border-box;margin-bottom: 30rpx;}
+.avatar{width: 10vw;height: 10vw;background-color: #eee;}
+.info{ flex: 1;padding-left: 30rpx;font-size: 28rpx;line-height: 2em;color: #555;}
+.info>view>.name{font-size: 28rpx;color: #555;}

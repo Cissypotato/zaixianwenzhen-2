@@ -1,0 +1,8 @@
+/* pages/index/allSort/allSort.wxss */
+
+.title{font-size: 40rpx;padding: 3vw}
+
+.main{width: 100%;display: flex;flex-wrap: wrap;border-top: 1px solid #eee}
+.item{width: 25vw;box-sizing: border-box;height: 25vw;border-right: 1px solid #eee;border-bottom: 1px solid #eee;display: flex;flex-direction: column;align-items: center;justify-content: center}
+.item>.img-wrapper{width: 14vw;height: 14vw;display: flex;justify-content: center;align-items: center;}
+.item>.img-wrapper>image{width: 80%;display: block}
