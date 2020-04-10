@@ -33,32 +33,35 @@
 	<scroll-view scroll-y="true" style="height:1000rpx;width:auto; padding-bottom:{{isShowModelUp==true?'448':'100'}}rpx;">
 		<view class="wrapper">
 			<view wx:for="{{chatList}}">
-				<view class="you" wx:if="{{item.status==1}}">
-					<view class="avatar">
-						<image mode="widthFix"></image>
-					</view>
-					<view class="content">
-						<view class="text-wrapper">
-							<!-- <text>maofheughefhoafhihfiwuefhfiuapgfuy3gfagfuyegw7fdajf3uegh78w4fhuwvboge7yrgf2f</text> -->
-							<text></text>
+				<view wx:if="{{item.status==1}}">
+					<view class="you" wx:for="{{item.content}}">
+						<view class="avatar">
+							<image mode="widthFix"></image>
 						</view>
-						<view class="img-wrapper" wx:if="{{item.img}}">
-							<!-- <image src="/images/banner1.jpg" mode="widthFix"></image> -->
-							<image></image>
+						<view class="content">
+							<view class="text-wrapper">
+								<text>{{item}}</text>
+							</view>
+							<view class="img-wrapper" wx:if="{{item.img}}">
+								<!-- <image src="/images/banner1.jpg" mode="widthFix"></image> -->
+								<image></image>
+							</view>
+
 						</view>
 
 					</view>
-
 				</view>
-				<view class="me" wx:else>
+				<view wx:if="{{item.status==2}}">
+				<view class="me"  wx:for="{{item.content}}">
 
 					<view class="avatar">
 						<image mode="widthFix"></image>
 					</view>
 					<view class="content">
 
-						3
+						<text>{{item}}</text>
 					</view>
+				</view>
 				</view>
 			</view>
 		</view>
@@ -75,8 +78,8 @@
 			<!-- <view class='luyin weui-flex__item' hidden='{{!isLuYin}}' bindtouchstart='startRecord' bindtouchend='stopRecord'>{{luYinText}}</view> -->
 			<icon class='iconfont submit' bindtap='submitInputValue'>发送</icon>
 			<icon class='iconfont icon-xiaolian' hidden='true'></icon>
-			
-		</view>  
+
+		</view>
 		<!--点击加号弹出来其他输入类型-->
 		<view hidden='{{!isShowModelUp}}'>
 			<view class='chat_bottom_add weui-flex weui-flex-wrap'>

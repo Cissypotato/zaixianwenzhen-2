@@ -14,7 +14,7 @@ page{
 
 .me{width: 100%;display: flex;padding: 3vw;box-sizing: border-box;flex-direction: row-reverse;}
 .me>.avatar{width: 10vw;height: 10vw;border-radius: 50%;background: rgb(199, 160, 160);margin-left:3vw;}
-.me>.content{border:1px solid pink;width: 68vw;white-space: normal;font-size: 28rpx;word-break:break-all;background: rgb(245, 213, 213);
+.me>.content{border:1px solid pink;max-width: 68vw;white-space: normal;font-size: 28rpx;word-break:break-all;background: rgb(245, 213, 213);
   padding:2vw;box-sizing: border-box;}
 
 

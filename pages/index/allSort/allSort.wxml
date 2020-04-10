@@ -2,13 +2,13 @@
 <view class="container">
   <view class="title">所有科室</view>
   <view class="main">
-    <view class="item" bindtap="toDoctorList" data-id="1">
+    <view class="item" bindtap="toDoctorList" data-id="{{item.departid}}" wx:for="{{initData}}">
       <view class="img-wrapper">
-        <image src="/images/fuke (2).png" mode="widthFix"></image>
+        <image src="{{item.img}}" mode="widthFix"></image>
       </view>
-      <view class="name">妇科</view>
+      <view class="name">{{item.department}}</view>
     </view>
-    <view class="item" bindtap="toDoctorList" data-id="1">
+    <!-- <view class="item" bindtap="toDoctorList" data-id="1">
       <view class="img-wrapper">
         <image src="/images/erke (2).png" mode="widthFix"></image>
       </view>
@@ -50,12 +50,7 @@
       </view>
       <view class="name">乳腺科</view>
     </view>
-    <!-- <view class="item" bindtap="toDoctorList" data-id="1">
-      <view class="img-wrapper">
-        <image src="/images/fuke (2).png" mode="widthFix"></image>
-      </view>
-      <view class="name">妇科</view>
-    </view> -->
+   
     <view class="item" bindtap="toDoctorList" data-id="1">
       <view class="img-wrapper">
         <image src="/images/erbihou (2).png" mode="widthFix"></image>
@@ -74,12 +69,7 @@
       </view>
       <view class="name">神经内科</view>
     </view>
-    <!-- <view class="item" bindtap="toDoctorList" data-id="1">
-      <view class="img-wrapper">
-        <image src="/images/fuke (2).png" mode="widthFix"></image>
-      </view>
-      <view class="name">妇科</view>
-    </view> -->
+   
     <view class="item" bindtap="toDoctorList" data-id="1">
       <view class="img-wrapper">
         <image src="/images/buyunbuyu (2).png" mode="widthFix"></image>
@@ -104,7 +94,7 @@
       </view>
       <view class="name">泌尿科</view>
     </view>
-    
+     -->
 
 
 

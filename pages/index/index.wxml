@@ -1,27 +1,27 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="header" style="background:url(/images/banner1-1.jpg) center center no-repeat;background-size:cover">
-    <view class="search">
-      <i class="iconfont icon-search"></i>
-      <input placeholder="搜索医生、科室、病症" placeholder-class="placeholder" bindfocus="tosearch"></input>
-    </view>
+	<view class="header" style="background:url(/images/banner1-1.jpg) center center no-repeat;background-size:cover">
+		<view class="search">
+			<i class="iconfont icon-search"></i>
+			<input placeholder="搜索医生、科室、病症" placeholder-class="placeholder" bindfocus="tosearch"></input>
+		</view>
 
-  </view>
-  <view class="main">
-    <view class="tab">
-      <view class="title-wrapper">
-        <view class="title">热门科室</view>
-        <view class="more" bindtap="toAllSort">更多 ></view>
-      </view>
+	</view>
+	<view class="main">
+		<view class="tab">
+			<view class="title-wrapper">
+				<view class="title">热门科室</view>
+				<view class="more" bindtap="toAllSort">更多 ></view>
+			</view>
 
-      <view class="item-wrapper">
-        <view class="item" bindtap="toDoctorList" data-id="1">
-          <view class="icon-wrapper">
-           <image src="/images/fuke (2).png" mode="widthFix"></image>
-          </view>
-          <view class="sort">妇科</view>
-        </view>
-        <view class="item"bindtap="toDoctorList" data-id="1">
+			<view class="item-wrapper">
+				<view class="item" bindtap="toDoctorList" data-id="{{item.departid}}" wx:for="{{initData.reback}}">
+					<view class="icon-wrapper">
+						<image src="{{item.img}}" mode="widthFix"></image>
+					</view>
+					<view class="sort">{{item.department}}</view>
+				</view>
+				<!-- <view class="item"bindtap="toDoctorList" data-id="1">
           <view class="icon-wrapper">
            <image src="/images/erke (2).png" mode="widthFix"></image>
           </view>
@@ -40,9 +40,9 @@
           
           </view>
           <view class="sort">杜氏骨科</view>
-        </view>
-      </view>
-      <view class="item-wrapper">
+        </view> -->
+			</view>
+			<!-- <view class="item-wrapper">
         <view class="item"bindtap="toDoctorList" data-id="1">
           <view class="icon-wrapper">
            <image src="/images/neike (2).png" mode="widthFix"></image>
@@ -70,65 +70,68 @@
           </view>
           <view class="sort">乳腺科</view>
         </view>
-      </view>
+      </view> -->
 
-    </view>
-    <view class="banner">
-       <image src="/images/banner2.jpg" mode="widthFix" bindtap="toTips"></image>
-    </view>
-    <view class="doc-list">
-      <view class="title-wrapper">
-        <view class="title">推荐医生</view>
-        <view class="more" bindtap="toDoctorList">更多 ></view>
-      </view>
+		</view>
+		<view class="banner">
+			<image src="{{initData.banner}}" mode="widthFix" bindtap="toTips"></image>
+		</view>
+		<view class="doc-list">
+			<view class="title-wrapper">
+				<view class="title">推荐医生</view>
+				<view class="more" bindtap="toDoctorList">更多 ></view>
+			</view>
 
-      <view class="list-item" bindtap="toDoctorDetail" data-id="1">
-        <view class="avatar">
-          <view class="avatar-img"></view>
-        </view>
-        <view class="info">
-          <view>
-            <span class="name">陈春涛</span>
-            <span class="title">副主任医师 | 皮肤科</span>
-          </view>
-          <view class="address">四川省第二中医院苏德医馆</view>
-          <view class="skill">针灸综合治疗各种疱疹针灸综合治疗各种疱疹针灸综合治疗各种疱疹</view>
-          <view>
-            <i class="iconfont icon-xingxing"></i>
-            <span class="score">5分</span>
-            <i class="iconfont icon-xinxi"></i>
-            <span class="answer">194个回答</span>
-          </view>
-          <view class="bottom">图文
-            <span class="price">￥197</span>
-            <span class="num">169人 0元</span>
-          </view>
-        </view>
-      </view>
-       <view class="list-item" bindtap="toDoctorDetail" data-id="1">
-        <view class="avatar">
-          <view class="avatar-img"></view>
-        </view>
-        <view class="info">
-          <view>
-            <span class="name">陈春涛</span>
-            <span class="title">副主任医师 | 皮肤科</span>
-          </view>
-          <view class="address">四川省第二中医院苏德医馆</view>
-          <view class="skill">针灸综合治疗各种疱疹针灸综合治疗各种疱疹针灸综合治疗各种疱疹</view>
-          <view>
-            <i class="iconfont icon-xingxing"></i>
-            <span class="score">5分</span>
-            <i class="iconfont icon-xinxi"></i>
-            <span class="answer">194个回答</span>
-          </view>
-          <view class="bottom">图文
-            <span class="price">￥197</span>
-            <span class="num">169人 0元</span>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
+			<view class="list-item" bindtap="toDoctorDetail" data-id="{{item.doctorid}}" wx:for="{{initData.doctor}}">
+				<view class="avatar">
+					
+					<view class="avatar-img">
+					<image src="{{item.doctorimg}}" mode="widthFix"></image>
+					</view>
+				</view>
+				<view class="info">
+					<view>
+						<span class="name">{{item.doctorname}}</span>
+						<span class="title">{{item.position}} | {{item.department}}</span>
+					</view>
+					<view class="address">{{item.hospital}}</view>
+					<view class="skill">{{item.intro}}}</view>
+					<view>
+						<i class="iconfont icon-xingxing"></i>
+						<span class="score">5分</span>
+						<i class="iconfont icon-xinxi"></i>
+						<span class="answer">{{item.interaction}}个回答</span>
+					</view>
+					<view class="bottom">图文
+						<span class="price">￥{{item.price}}</span>
+						<span class="num">169人 0元</span>
+					</view>
+				</view>
+			</view>
+			<!-- <view class="list-item" bindtap="toDoctorDetail" data-id="1">
+				<view class="avatar">
+					<view class="avatar-img"></view>
+				</view>
+				<view class="info">
+					<view>
+						<span class="name">陈春涛</span>
+						<span class="title">副主任医师 | 皮肤科</span>
+					</view>
+					<view class="address">四川省第二中医院苏德医馆</view>
+					<view class="skill">针灸综合治疗各种疱疹针灸综合治疗各种疱疹针灸综合治疗各种疱疹</view>
+					<view>
+						<i class="iconfont icon-xingxing"></i>
+						<span class="score">5分</span>
+						<i class="iconfont icon-xinxi"></i>
+						<span class="answer">194个回答</span>
+					</view>
+					<view class="bottom">图文
+						<span class="price">￥197</span>
+						<span class="num">169人 0元</span>
+					</view>
+				</view>
+			</view> -->
+		</view>
+	</view>
 
 </view>

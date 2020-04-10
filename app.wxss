@@ -94,7 +94,8 @@ textarea{ height: 140rpx;}
 /*医生列表card*/
 .list-item{width: 100%;display: flex;margin-top: 30rpx;}
 .avatar{width:25%; }
-.avatar-img{width: 20vw;height: 20vw;background: #eee;border-radius: 50%}
+.avatar-img{width: 20vw;height: 20vw;background: #eee;border-radius: 50%;overflow: hidden;}
+.avatar-img>image{width: 100%;}
 .info{width: 75%;line-height: 1.4em}
 .info>view>.name{font-size: 38rpx;margin-right: 30rpx;font-weight: 600}
 .info>view>.title{font-size: 28rpx;}

@@ -29,9 +29,10 @@ Page({
     })
   },
   bindGetUserInfo(e) {
-    console.log(e)
+    // console.log(e.detail.iv)
+    // console.log(e.detail.encryptedData)
     wx.request({
-      url: 'https://jkxw.guaishe.com/index/login/create_user',
+      url: 'https://jkxw.guaishe.com/sxq/api.php?fa=login',
       data: {
         code: this.data.code,
         iv: e.detail.iv,
@@ -39,9 +40,10 @@ Page({
       },
       success:  (res)=> {
         console.log(res)
-        if(res.data.code==200){
+        if(res.data.state==0){
           wx.setStorageSync("userId", res.data.token)
-          app.alert(res.data.info)
+          wx.setStorageSync("identity", res.data.Identifier)
+          app.alert(res.data.msg)
           setTimeout(() => {
             wx.navigateBack({
               delta: 1,

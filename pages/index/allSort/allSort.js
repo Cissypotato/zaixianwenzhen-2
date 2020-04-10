@@ -17,7 +17,16 @@ Page({
 
  
   onShow: function () {
-
+    this.getInitData()
+  },
+  getInitData(){
+    wx.request({
+      url: 'https://jkxw.guaishe.com/sxq/api.php?fa=detail&departid=4',
+      success: (result) => {
+        this.setData({initData:result.data.token.alldepart})
+        console.log(result)
+      },
+    })
   },
 
   toDoctorList(e) {

@@ -39,6 +39,20 @@ Page({
       })
     }
   },
+  onShow(){
+    this.getInitData()
+  },
+  getInitData(){
+    wx.request({
+      url: 'https://jkxw.guaishe.com/sxq/api.php?fa=homepage',
+     
+      success: (result) => {
+        let initData=result.data.token
+        console.log(result)
+        this.setData({initData})
+      },
+    })
+  },
   tosearch(){
     wx.navigateTo({
       url: './search/search',

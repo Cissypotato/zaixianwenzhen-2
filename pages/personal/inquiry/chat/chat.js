@@ -6,7 +6,7 @@ Page({
   data: {
     taskId: '',
     userId: '',
-    chatList: [{status:1,content:"helloWord1"},{status:2,content:"helloWord2"},{status:1,content:"helloWord3"}],//聊天内容
+    chatList: [{status:1,content:["helloWord1",'2333jfewgh9joaih9shuishviudhgvgedgh0esapjv89rhvsifhe8wghijdopifjwuyhg7ehgisvwohtr8']},{status:2,content:["helloWord2"]},{status:1,content:["helloWord3"]}],//聊天内容
     isShowModelUp: false,//底部弹框显示true,隐藏为false 
     // isLuYin: false,//没有录音false,开始录音true
     // luYinText: '按住说话',
@@ -131,8 +131,8 @@ Page({
         inputValue:''
       })
       //关闭弹窗
-      that.closeModelUp();
-      that.pageScrollToBottom();
+      this.closeModelUp();
+      this.pageScrollToBottom();
     }
    
   },
