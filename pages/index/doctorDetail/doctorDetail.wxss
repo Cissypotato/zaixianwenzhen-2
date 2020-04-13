@@ -2,7 +2,8 @@
 /*头部*/
 .header{background: #c89f63;padding:4vw 3vw;color: #fff}
 .top{width: 100%;display: flex;}
-.top>.avatar{width: 18vw;height: 18vw;background: #fff;border-radius: 50%}
+.top>.avatar{width: 18vw;height: 18vw;background: #fff;border-radius: 50%;overflow: hidden;}
+.top>.avatar>image{width: 100%;}
 .top>.info-1{flex: 1;font-size: 28rpx;display: flex;flex-direction: column;justify-content: center;padding-left: 30rpx;line-height: 1.7em;}
 .info-1-top{display: flex;justify-content: space-between}
 .info-1-top>view>.name{font-size: 36rpx;margin-right: 20rpx;}

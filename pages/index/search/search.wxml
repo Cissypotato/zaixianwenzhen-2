@@ -4,9 +4,9 @@
   <view class="search-wrapper">
     <view class="search">
       <i class="iconfont icon-search"></i>
-      <input placeholder="搜索医生、科室、病症" placeholder-class="placeholder" bindfocus="tosearch"></input>
+      <input placeholder="搜索医生、科室、病症" placeholder-class="placeholder" bindblur="getSearchVal"></input>
     </view>
-    <view bindtap="submit" class="confirm">确定</view>
+    <view bindtap="search" class="confirm">确定</view>
   </view>
   <view class="main" wx:if="{{list.length>0}}">
 
@@ -33,5 +33,8 @@
         </view>
       </view>
     </view>
+  </view>
+  <view class="main" wx:else>
+    <view>暂时没有数据</view>   
   </view>
 </view>

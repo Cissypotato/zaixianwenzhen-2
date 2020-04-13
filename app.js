@@ -41,6 +41,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    appUrl: 'https://jkxw.guaishe.com/sxq/api.php',
   }
 })

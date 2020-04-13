@@ -16,7 +16,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(1)
+    this.getInitData()
+  },
+  onShow(){
+   
+  },
+  getInitData(){
+    console.log(2)
+    wx.request({
+      url: 'https://jkxw.guaishe.com/sxq/api.php?fa=personal&id=2',
+      success: (result) => {
+        console.log(3)
+        this.setData({
+          initData:result.data.token
+        })
+        console.log(result.data.token)
+      },
+    })
   },
   onShow: function () {
     let userId = wx.getStorageSync("userId")

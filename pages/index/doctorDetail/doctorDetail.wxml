@@ -2,24 +2,28 @@
 <view class="container">
   <view class="header">
     <view class="top">
-      <view class="avatar"></view>
+      <view class="avatar">
+       <image src="{{initData.doctorimg}}" mode="widthFix"></image>
+      
+      </view>
       <view class="info-1">
         <view class="info-1-top">
           <view>
-            <span class="name">陈土豆</span> 主任医师
+            <span class="name">{{initData.doctorname}}</span> {{initData.position}}
           </view>
           <view class="unfollow" bindtap="handleFollow"wx:if="{{follow}}">取消关注</view>
           <view class="follow" bindtap="handleFollow" wx:else>关注</view>
           
         </view>
-        <view>内科 | 四川省第二中医院殊德医馆</view>
+        <!-- <view>内科 | 四川省第二中医院殊德医馆</view> -->
+        <view>{{initData.department}} | {{initData.hospital}}</view> 
       </view>
 
 
     </view>
     <view class="middle">
       <view class="m-item">
-        <view class="num">3208</view>
+        <view class="num">{{initData.interaction}} </view>
         <view class="unit">问诊量</view>
       </view>
       <view class="m-item">
@@ -27,7 +31,7 @@
         <view class="unit">评分</view>
       </view>
       <view class="m-item">
-        <view class="num">3169</view>
+        <view class="num">{{initData.follow}} </view>
         <view class="unit">关注量</view>
       </view>
 
@@ -99,20 +103,18 @@
         <span>·</span>医生48小时未接诊，自动退款</view>
     </view>
 
-    <view class="section">
-      <view class="title">医生擅长</view>
-      <view class="content">针灸综合治疗带状疱疹及后遗神经痛、扁平疣、结节囊肿型痤疮、荨麻疹、湿疹、银屑病、各类皮炎</view>
-
-    </view>
+   
 
     <view class="section">
       <view class="title">医生简介</view>
-      <view class="part">
+        <view class="content">{{initData.specialty}}</view>
+      <!-- <view class="content">毕业于成都中医药大学，副主任医师、四川省中医外科、皮肤分会专委会委员，从事临床工作15年，师承国家知名老中医张毅学术传承工作室以及四川省第五批中药 ，曾获“青年岗位能手”称号。</view> -->
+      <!-- <view class="part">
         <view class="part-t">一、荣誉：</view>
         <view class="content-item">1.副主任医师</view>
         <view class="content-item">2.青年岗位能手</view>
         <view class="content-item">3.四川省中医外科、皮肤分会专委会委员</view>
-      </view>
+      </view> -->
 
       <!-- <view class="part">
         <view class="part-t">二、学术成果：</view>
@@ -120,14 +122,20 @@
         <view class="content-item">2.编著专著1部</view>
         <view class="content-item">3.参加了2项国家级和10项省级科研课题，获省政府科技进步三等奖1项</view>
       </view> -->
-      <view class="part">
-        <view class="part-t">三、从医经历：</view>
+      <!-- <view class="part">
+        <view class="part-t">二、从医经历：</view>
         <view class="content-item">毕业于成都中医药大学，从事临床工作15余年，在国家名老中医张毅学术传承工作室学以及四川省第五批中药师承教育学习</view>
-      </view>
-      <view class="part">
-        <view class="part-t">四、主治病症：</view>
+      </view> -->
+      <!-- <view class="part">
+        <view class="part-t">三、主治病症：</view>
         <view class="content-item">状疱疹及后遗神经痛、扁平疣、结节囊肿型痤疮、荨麻疹、湿疹、银屑病、各类皮炎，疗技术治疗各种皮肤科顽症</view>
-      </view>
+      </view> -->
+
+    </view>
+     <view class="section">
+      <view class="title">医生擅长</view>
+      <!-- <view class="content">针灸综合治疗带状疱疹及后遗神经痛、扁平疣、结节囊肿型痤疮、荨麻疹、湿疹、银屑病、各类皮炎</view> -->
+      <view class="content">{{initData.intro}}</view>
 
     </view>
 
